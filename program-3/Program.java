@@ -43,19 +43,14 @@ class Program {
         String sem = scan.nextLine();
         String branch = scan.nextLine();
         String  student = name + "|" + usn + "|" + sem + "|" + branch + "|";
-//        File file = new File("student.txt"); 
-//        if (!file.exists()) { 
-//            // Create a new file if not exists. 
-//            file.createNewFile(); 
-//        }
         PrintWriter pw = new PrintWriter(new FileOutputStream(new File("student.txt"),true));
-        String s = "-";
-        int len = student.length();
-        if(len < 50)
-        {
-            for(int i = len; i < 50; i++)
-            student = student.concat(s);
-        }
+//        String s = "-";
+//        int len = student.length();
+//        if(len < 50)
+//        {
+//            for(int i = len; i < 50; i++)
+//            student = student.concat(s);
+//        }
         pw.println(student);
         pw.flush();
         pw.close();
@@ -136,16 +131,7 @@ class Program {
                 String sem11 = scan.nextLine();
                 String branch11 = scan.nextLine();
                 String b = name11 + "|" + usn11 + "|" + sem11 + "|" + branch11 + "|";
-                int len = b.length();
-                String s1 = "-";
-                if(len < 50)
-                {
-                    for(int j = len; j <= 50; j++)
-                    {
-                        b = b.concat(s1);
-                    }
                     pw.println(b);
-                }
             }
             else{
                 pw.println(string);
