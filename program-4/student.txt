@@ -1,0 +1,6 @@
+pankaj|35|6|ise|
+abhi|4|6|ise|
+deep|18|6|cse|
+kartik|32|6|eee|
+vineet|44|6|eee|
+ram|54|6|me|
